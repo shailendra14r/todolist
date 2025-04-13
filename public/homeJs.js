@@ -4,7 +4,9 @@ const notes = document.getElementById('notes');
 const bussiness = document.getElementById('bussiness');
 const personal = document.getElementById('personal');
 const empty = document.getElementById('empty');
-const url='http://localhost:8000/';
+// const url='http://localhost:8080/';
+const {origin} = window.location;
+const url = origin + '/';
 
 
 const month = ['January', 'Feburary', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
